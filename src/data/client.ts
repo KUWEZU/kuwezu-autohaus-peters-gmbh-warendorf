@@ -1,6 +1,6 @@
 /**
  * client.ts — Automatisch generiert von KUWEZU
- * Erstellt: 2026-05-12T18:12:58.788Z
+ * Erstellt: 2026-05-12T18:54:41.590Z
  * Kundennummer: 65
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
@@ -11,7 +11,7 @@ export const client = {
   name: "Autohaus Peters GmbH",
   branche: "Autowerkstatt",
   ort: "Warendorf",
-  slogan: "zuverlässige Autowerkstatt",
+  slogan: "mit Herz",
   adresse: "Waterstroate 22, 48231 Warendorf",
   telefon: "02581 7894670",
   email: "",
@@ -21,17 +21,17 @@ export const client = {
 
   // ── Branding ───────────────────────────────────────────────────────────────
   farben: {
-    primary: "#90c030",
-    secondary: "#787878",
-    accent: "#c0c0c0",
+    primary: "#e30613",
+    secondary: "#000000",
+    accent: "#b1b2b3",
   },
   // ── Hero ───────────────────────────────────────────────────────────────────
   hero: {
     bild: "https://r2.kuwezu.de/kunden/65/hero.webp",
     overlayOpacity: 0.55, /* fix — nie schwächer, nie überschreibbar */
-    ueberschrift: "Ihre zuverlässige Autowerkstatt in Warendorf",
-    ueberschriftHighlight: "zuverlässige Autowerkstatt",
-    untertext: "Von Bremsen über Achsvermessung bis Autoglas – wir bringen Ihr Fahrzeug wieder sicher auf die Straße. Schnell, kompetent und fair.",
+    ueberschrift: "Ihre Autowerkstatt in Warendorf mit Herz",
+    ueberschriftHighlight: "mit Herz",
+    untertext: "Vom Autoglas bis zur Bremse – bei uns ist Ihr Fahrzeug in den besten Händen. Qualität und Service seit Jahren.",
     ctaPrimary: { text: "Termin vereinbaren", href: "#kontakt" },
     ctaSecondary: { text: "Leistungen ansehen", href: "#leistungen" },
   },
@@ -39,10 +39,10 @@ export const client = {
   // ── Über uns ───────────────────────────────────────────────────────────────
   ueberUns: {
     bild: "https://r2.kuwezu.de/kunden/65/ueber-uns.webp",
-    ueberschrift: "Autohaus Peters – Ihr Partner für Autowerkstatt in Warendorf",
-    text1: "Als etablierte Autowerkstatt in Warendorf sind wir Ihre erste Adresse für alle Reparaturen und Services rund um Ihr Fahrzeug. Von präziser Achsvermessung über Bremsenwartung bis zum professionellen Autoglasservice – wir decken alle wichtigen Leistungen ab. Damit Sie bei uns keine Minute ohne Mobilität sind, stellen wir Ihnen bei Bedarf einen Ersatzwagen zur Verfügung.",
-    text2: "Qualität, Termintreue und ehrliche Beratung sind für uns selbstverständlich. Wir nehmen uns Zeit für Ihre Anliegen und arbeiten mit moderner Technik sowie geschulten Fachkräften. Ihr Auto ist bei uns in guten Händen.",
-    tags: ["Meisterbetrieb", "Ersatzwagen inklusive", "Moderne Diagnosetechnik", "Faire Preise"],
+    ueberschrift: "Autohaus Peters – Ihre Werkstatt in Warendorf",
+    text1: "Seit vielen Jahren ist das Autohaus Peters GmbH Ihr zuverlässiger Partner rund ums Auto in Warendorf. Von der professionellen Achsvermessung über Bremsenwartung bis zum Autoglasservice bieten wir Ihnen alle wichtigen Werkstattleistungen unter einem Dach. Unser erfahrenes Team kümmert sich um Ihr Fahrzeug, als wäre es unser eigenes.",
+    text2: "Wir setzen auf ehrliche Beratung, transparente Preise und saubere Arbeit. Bei uns bekommen Sie nicht nur fachmännischen Service, sondern auch einen Ersatzwagen, damit Sie mobil bleiben. Vertrauen Sie auf unsere Kompetenz.",
+    tags: ["Familiengeführt", "Erfahrenes Team", "Faire Preise", "Schneller Service"],
     stats: [
       { value: "10+",    label: "Jahre Erfahrung"   },
       { value: "1.000+", label: "Zufriedene Kunden" },
@@ -57,29 +57,29 @@ export const client = {
       slug: "autoglas",
       title: "Autoglas",
       bild: "https://r2.kuwezu.de/bibliothek/Autoglas/1777829664081-autoglas_reparatur.webp",
-      description: "Von kleinen Steinschlägen bis zum kompletten Scheibentausch – wir reparieren und erneuern Ihr Autoglas fachgerecht. Schnelle Terminvergabe und direkte Abwicklung mit Ihrer Versicherung.",
-      highlights: ["Steinschlagreparatur in 30 Minuten", "Scheibentausch aller Marken", "Versicherungsabwicklung inklusive"],
+      description: "Ob Steinschlag oder Riss – wir reparieren und tauschen Ihre Autoscheiben fachgerecht aus. Schnell, sauber und mit hochwertigen Materialien für klare Sicht und Ihre Sicherheit.",
+      highlights: ["Steinschlagreparatur", "Scheibentausch", "Versicherungsabwicklung"],
     },
     {
       slug: "achsvermessung",
       title: "Achsvermessung",
       bild: "https://r2.kuwezu.de/bibliothek/Achsvermessung/1777878369186-leistung_achsvermessung.webp",
-      description: "Eine präzise Achsvermessung sorgt für optimalen Geradeauslauf, gleichmäßigen Reifenverschleiß und sicheres Fahrverhalten. Mit modernster 3D-Technik vermessen wir Ihr Fahrzeug millimetergenau.",
-      highlights: ["3D-Achsvermessung computergestützt", "Präzise Spureinstellung", "Reduziert Reifenverschleiß"],
+      description: "Präzise Achsvermessung mit modernster Technik für optimalen Geradeauslauf und gleichmäßigen Reifenverschleiß. Wir stellen Ihre Spur exakt ein und sorgen für sicheres Fahrverhalten.",
+      highlights: ["3D-Vermessungstechnik", "Spureinstellung", "Verschleißprävention"],
     },
     {
       slug: "bremsen",
       title: "Bremsen",
       bild: "https://r2.kuwezu.de/bibliothek/Bremsen/1777878346158-bremsen_service.webp",
-      description: "Ihre Bremsen sind das wichtigste Sicherheitssystem am Fahrzeug. Wir prüfen, warten und erneuern Bremsbeläge, Bremsscheiben und die komplette Bremsanlage – für maximale Sicherheit.",
-      highlights: ["Bremsbeläge und Bremsscheiben", "Bremsenprüfung und Wartung", "Qualitätsteile aller Marken"],
+      description: "Ihre Sicherheit liegt uns am Herzen. Wir prüfen, warten und erneuern Bremsanlagen aller Fabrikate – von Bremsbelägen über Bremsscheiben bis zur kompletten Bremsflüssigkeit.",
+      highlights: ["Bremsbeläge & -scheiben", "Bremsflüssigkeitswechsel", "Alle Fahrzeugmarken"],
     },
     {
       slug: "ersatzwagen",
       title: "Ersatzwagen",
       bild: "https://r2.kuwezu.de/bibliothek/Ersatzwagen/1777882571137-ersatzwagen_auto.webp",
-      description: "Damit Sie mobil bleiben, stellen wir Ihnen während der Reparatur kostengünstig einen Ersatzwagen zur Verfügung. Einfach bei Terminvereinbarung mitbuchen – wir kümmern uns um den Rest.",
-      highlights: ["Günstige Tagespauschalen", "Gepflegte Fahrzeuge", "Sofort verfügbar bei Terminbuchung"],
+      description: "Damit Sie auch während der Reparatur mobil bleiben, stellen wir Ihnen gerne einen Ersatzwagen zur Verfügung. Unkompliziert und zu fairen Konditionen.",
+      highlights: ["Sofort verfügbar", "Faire Tagespreise", "Unkomplizierte Abwicklung"],
     }
   ],
 
