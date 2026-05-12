@@ -11,10 +11,10 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   title: "Autowerkstatt Warendorf | Autohaus Peters GmbH",
-  description: "Ihre Kfz-Werkstatt in Warendorf: Autoglas, Achsvermessung, Bremsen & mehr. Mit kostenlosem Ersatzwagen. Jetzt Termin vereinbaren!",
+  description: "Ihre Autowerkstatt in Warendorf: Bremsen, Achsvermessung, Autoglas & Ersatzwagen. Kompetent, schnell & zuverlässig. Jetzt Termin vereinbaren!",
   openGraph: {
     title: "Autowerkstatt Warendorf | Autohaus Peters GmbH",
-    description: "Ihre Kfz-Werkstatt in Warendorf: Autoglas, Achsvermessung, Bremsen & mehr. Mit kostenlosem Ersatzwagen. Jetzt Termin vereinbaren!",
+    description: "Ihre Autowerkstatt in Warendorf: Bremsen, Achsvermessung, Autoglas & Ersatzwagen. Kompetent, schnell & zuverlässig. Jetzt Termin vereinbaren!",
     type: "website",
     locale: "de_DE",
   },
