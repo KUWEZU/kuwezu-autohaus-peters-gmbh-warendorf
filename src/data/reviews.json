@@ -1,1 +1,39 @@
-{"averageRating":null,"totalCount":0,"source":"Google","fetchedAt":"","reviews":[]}
+{
+  "averageRating": 4.8,
+  "totalCount": 37,
+  "source": "Google",
+  "fetchedAt": "2026-05-12T18:01:11.652Z",
+  "reviews": [
+    {
+      "author": "Waldemar Swoboda",
+      "rating": 5,
+      "text": "Schnelle Diagnose und eine gute Beratung.\nMan fühlt sich hier gut aufgehoben.\nDie Arbeiten werden zeitnah und zielorientiert ausgeführt.\nHier steht sicher nicht der Umsatz im Vordergrund!\nBin bereits sehr lange Kunde in diesem Betrieb und hatte nie das Gefühl, übervorteilt worden zu sein.\nKann diese Werkstatt nur empfehlen!\nDanke für die bisher sehr gut ausgeführten Arbeiten!\nWeiterhin viel Erfolg und auf eine gute und langfristige Zusammenarbeit !",
+      "date": "vor 3 Jahren"
+    },
+    {
+      "author": "Kalera “Privat”",
+      "rating": 5,
+      "text": "Herr Peters ist ein sehr freundlicher und kompetenter KFZ Meister. Er versteht seinen Job.",
+      "date": "vor 11 Monaten"
+    },
+    {
+      "author": "Tim Horton",
+      "rating": 5,
+      "text": "Top service, die Aufregung von dem anderen Kunden kann ich irgendwie nicht nachvollziehen, musste auch bar zahlen und Arbeit plus Aufwand kosten Geld. Irgendwo muss der Handwerker doch seine Sicherheit haben, also für mich nichts ungewöhnliches wenn man vorher einen ungefähren Preis ausmacht? Der Azubi war auch super drauf und hat sichtbar Ahnung vom Schrauben. Weiter so",
+      "date": "vor 7 Jahren"
+    },
+    {
+      "author": "Heidrun",
+      "rating": 5,
+      "text": "Bin schon viele Jahre da, immer,  sehr kompetent,  schneller Service,  faire Preise,  vollste Zufriedenheit.",
+      "date": "vor 6 Jahren"
+    },
+    {
+      "author": "Daniel Rüter",
+      "rating": 5,
+      "text": "Super Service und faire Preis. Aufjedenfall weiterzuempfehlen.",
+      "date": "vor 3 Jahren"
+    }
+  ],
+  "_debug": "gmb-import"
+}

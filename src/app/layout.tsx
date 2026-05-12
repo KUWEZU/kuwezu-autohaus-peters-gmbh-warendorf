@@ -10,13 +10,20 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "KUWEZU | Professionelle Kfz-Werkstatt",
-  description: "Ihre Kfz-Werkstatt für alle Leistungen. Qualität und Transparenz.",
+  title: "Autowerkstatt Warendorf | Autohaus Peters GmbH",
+  description: "Ihre Kfz-Werkstatt in Warendorf: Autoglas, Achsvermessung, Bremsen & mehr. Mit kostenlosem Ersatzwagen. Jetzt Termin vereinbaren!",
   openGraph: {
-    title: "KUWEZU | Professionelle Kfz-Werkstatt",
-    description: "Ihre zuverlässige Kfz-Werkstatt.",
+    title: "Autowerkstatt Warendorf | Autohaus Peters GmbH",
+    description: "Ihre Kfz-Werkstatt in Warendorf: Autoglas, Achsvermessung, Bremsen & mehr. Mit kostenlosem Ersatzwagen. Jetzt Termin vereinbaren!",
     type: "website",
     locale: "de_DE",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32", type: "image/x-icon" },
+      { url: "/logo.png", type: "image/png" },
+    ],
+    apple: "/logo.png",
   },
 };
 

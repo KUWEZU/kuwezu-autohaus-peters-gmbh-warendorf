@@ -1,171 +1,107 @@
 /**
- * client.ts — Zentrale Konfiguration für das Kundenprojekt.
+ * client.ts — Automatisch generiert von KUWEZU
+ * Erstellt: 2026-05-12T18:02:49.107Z
+ * Kundennummer: 65
  *
  * Alle Texte, Bilder und Einstellungen werden hier gepflegt.
- *
- * Bilder-Strategie:
- *   - Echte Bilder kommen direkt von R2 (https://r2.kuwezu.de/bibliothek/...)
- *   - SVG-Platzhalter (lokales /images/...) für Kategorien ohne Foto in R2
- *   - Sobald ein neues Bild hochgeladen ist: URL hier eintragen und fertig.
  */
-
-const R2 = "https://r2.kuwezu.de";
 
 export const client = {
   // ── Allgemein ──────────────────────────────────────────────────────────────
-  name: "KUWEZU",
-  branche: "Kfz-Werkstatt" as string,
-  ort: "Musterstadt" as string,
-  slogan: "Professionelle Kfz-Werkstatt die Sie verdienen",
-  adresse: "Musterstraße 1, 12345 Musterstadt",
-  telefon: "+49 123 456 7890",
-  email: "info@ihre-werkstatt.de",
-  website: "https://ihre-werkstatt.de",
-  logo: null,
+  name: "Autohaus Peters GmbH",
+  branche: "Autowerkstatt",
+  ort: "Warendorf",
+  slogan: "Rundum-Service",
+  adresse: "Waterstroate 22, 48231 Warendorf",
+  telefon: "02581 7894670",
+  email: "",
+  website: "",
+  logo: "https://r2.kuwezu.de/kunden/65/logo.png",
   standort_bild: null,
 
-  // ── Öffnungszeiten & Services ──────────────────────────────────────────────
-  tuev_termine: true as boolean,
-  oeffnungszeiten: {
-    mo_fr: "08:00 – 18:00" as string,
-    sa:    "09:00 – 13:00" as string,
-    so:    "" as string,
+  // ── Branding ───────────────────────────────────────────────────────────────
+  farben: {
+    primary: "#90c030",
+    secondary: "#787878",
+    accent: "#c0c0c0",
   },
-
   // ── Hero ───────────────────────────────────────────────────────────────────
   hero: {
-    bild: "/images/hero.svg",
-    overlayOpacity: 0.55,
-    ueberschrift: "Professionelle Kfz-Reparatur",
-    ueberschriftHighlight: "die Sie verdienen",
-    untertext:
-      "Von der Inspektion bis zur Unfallreparatur — wir kümmern uns um Ihr Fahrzeug mit modernster Technik und über 20 Jahren Erfahrung.",
+    bild: "https://r2.kuwezu.de/kunden/65/hero.webp",
+    overlayOpacity: 0.55, /* fix — nie schwächer, nie überschreibbar */
+    ueberschrift: "Ihre Autowerkstatt in Warendorf mit Rundum-Service",
+    ueberschriftHighlight: "Rundum-Service",
+    untertext: "Von Autoglasreparatur bis Achsvermessung – wir halten Ihr Fahrzeug sicher auf Kurs. Kompetent, zuverlässig und mit kostenlosem Ersatzwagen.",
     ctaPrimary: { text: "Termin vereinbaren", href: "#kontakt" },
     ctaSecondary: { text: "Leistungen ansehen", href: "#leistungen" },
   },
 
   // ── Über uns ───────────────────────────────────────────────────────────────
   ueberUns: {
-    bild: "/images/ueber-uns.svg",
-    ueberschrift: "Ihre Werkstatt — Ihr Vertrauen",
-    text1:
-      "Seit über 20 Jahren sind wir Ihr zuverlässiger Partner rund ums Fahrzeug. Unser Team aus ausgebildeten Kfz-Meistern und Fachkräften arbeitet täglich daran, Ihnen den besten Service zu bieten.",
-    text2:
-      "Wir setzen auf modernste Diagnosetechnik, hochwertige Markenteile und transparente Kostenvoranschläge — damit Sie immer wissen, was Sie erwartet.",
-    tags: ["Meisterbetrieb", "Alle Marken", "Kostenloser Kostenvoranschlag", "Hol- & Bringservice"],
+    bild: "https://r2.kuwezu.de/kunden/65/ueber-uns.webp",
+    ueberschrift: "Ihre verlässliche Autowerkstatt im Herzen von Warendorf",
+    text1: "Das Autohaus Peters GmbH ist Ihr kompetenter Partner für alle Belange rund um Ihr Fahrzeug. Mit modernster Technik und erfahrenen Kfz-Mechanikern kümmern wir uns um Reparaturen, Wartungen und Sicherheitschecks. Ob Autoglas, Bremsen oder präzise Achsvermessung – wir arbeiten herstellerübergreifend und legen größten Wert auf Qualität.",
+    text2: "Bei uns wird Ihr Auto nicht einfach nur repariert – wir nehmen uns Zeit für eine ehrliche Beratung und transparente Kostenvoranschläge. Damit Sie mobil bleiben, stellen wir Ihnen während der Reparatur gerne einen Ersatzwagen zur Verfügung.",
+    tags: ["Meisterbetrieb", "Ersatzwagen kostenlos", "Alle Fabrikate", "Faire Preise"],
     stats: [
-      { value: "20+",    label: "Jahre Erfahrung"      },
-      { value: "5.000+", label: "Zufriedene Kunden"    },
-      { value: "12",     label: "Fachkräfte"            },
-      { value: "15.000+",label: "Reparaturen/Jahr"     },
+      { value: "10+",    label: "Jahre Erfahrung"   },
+      { value: "1.000+", label: "Zufriedene Kunden" },
+      { value: "5",      label: "Fachkräfte"        },
+      { value: "5.000+", label: "Aufträge/Jahr"     },
     ],
   },
 
   // ── Leistungen ─────────────────────────────────────────────────────────────
   leistungen: [
     {
-      slug: "lackierung",
-      title: "Lackierung",
-      bild: `${R2}/bibliothek/Lackierung/1777808096660-leistung_lackierung.png`,
-      description:
-        "Professionelle Fahrzeuglackierungen in Originallack-Qualität — vom Spot-Repair bis zur Komplett-Lackierung.",
-      highlights: ["Originallack-Farbanpassung", "Klarlack-Versiegelung", "Spot-Repair möglich"],
-    },
-    {
-      slug: "karosserie",
-      title: "Karosserie",
-      bild: `${R2}/bibliothek/Karosserie/1777808101772-leistung_karosserie.jpeg`,
-      description:
-        "Richtraumarbeiten, Blechreparaturen und Karosseriearbeiten nach Unfall oder Hagelschaden.",
-      highlights: ["Richtrahmen-Technologie", "Schweißarbeiten", "Kotflügel & Türen"],
-    },
-    {
-      slug: "reifenwechsel",
-      title: "Reifenwechsel",
-      bild: `${R2}/bibliothek/Reifenwechsel/1777808539901-auto_reifen_wechsel_15_11zon.webp`,
-      description:
-        "Sommer-, Winter- und Ganzjahresreifen — inklusive Einlagerung und RDKS-Programmierung.",
-      highlights: ["Alle Reifengrößen", "RDKS-Service", "Reifeneinlagerung"],
-    },
-    {
-      slug: "inspektion",
-      title: "Inspektion",
-      bild: `${R2}/bibliothek/Inspektion/1777808114491-leistung_inspektion.jpg`,
-      description:
-        "Herstellerkonforme Inspektionen für alle Fabrikate — ohne Garantieverlust.",
-      highlights: ["Alle Marken", "Originalteile", "Digitales Serviceheft"],
-    },
-    {
-      slug: "hu-au",
-      title: "HU / AU",
-      bild: `${R2}/bibliothek/HU/AU/1777808071378-leistung_tu_v.png`,
-      description:
-        "Hauptuntersuchung und Abgasuntersuchung direkt bei uns — schnell und ohne lange Wartezeit.",
-      highlights: ["TÜV & DEKRA Partner", "Mängelbeseitigung", "Express-Termin"],
-    },
-    {
       slug: "autoglas",
       title: "Autoglas",
-      bild: `${R2}/bibliothek/Autoglas/1777808080567-autoglas_reparatur.png`,
-      description:
-        "Steinschlagreparatur, Windschutzscheibenwechsel und Kalibrierung von Fahrerassistenzsystemen.",
-      highlights: ["Steinschlagreparatur", "ADAS-Kalibrierung", "Versicherungsabrechnung"],
+      bild: "https://r2.kuwezu.de/bibliothek/Autoglas/1777829664081-autoglas_reparatur.webp",
+      description: "Steinschlag oder Riss in der Scheibe? Wir reparieren und tauschen Autoglas aller Hersteller fachgerecht aus. Schnell, sauber und mit direkter Abrechnung über Ihre Versicherung.",
+      highlights: ["Steinschlagreparatur", "Scheibentausch alle Marken", "Versicherungsabwicklung"],
     },
     {
-      slug: "smart-repair",
-      title: "Smart Repair",
-      bild: "/images/leistungen/smart-repair.svg",
-      description:
-        "Kleine Dellen, Kratzer und Lackschäden wirtschaftlich und schnell reparieren.",
-      highlights: ["Delle ohne Lackierung", "Lackkratzer-Politur", "Felgenaufbereitung"],
+      slug: "achsvermessung",
+      title: "Achsvermessung",
+      bild: "https://r2.kuwezu.de/bibliothek/Achsvermessung/1777878369186-leistung_achsvermessung.webp",
+      description: "Mit modernster 3D-Messtechnik vermessen wir Ihre Achsen millimetergenau. Das sorgt für optimales Fahrverhalten, gleichmäßigen Reifenverschleiß und mehr Sicherheit auf der Straße.",
+      highlights: ["3D-Achsvermessung", "Spur- und Sturzeinstellung", "Reifenverschleiß minimieren"],
     },
     {
-      slug: "klimaservice",
-      title: "Klimaservice",
-      bild: `${R2}/bibliothek/Klimaservice/1777808061957-leistung_klimaanlage.png`,
-      description:
-        "Klimaanlagen-Wartung, Desinfektion und Kältemittel-Befüllung nach aktuellen Standards.",
-      highlights: ["R134a & R1234yf", "Desinfektion", "Lecksuche"],
+      slug: "bremsen",
+      title: "Bremsen",
+      bild: "https://r2.kuwezu.de/bibliothek/Bremsen/1777878346158-bremsen_service.webp",
+      description: "Ihre Bremsen sind das wichtigste Sicherheitssystem am Fahrzeug. Wir prüfen, warten und erneuern Bremsbeläge, Bremsscheiben und die komplette Bremsanlage mit Originalteilen oder hochwertigen Alternativen.",
+      highlights: ["Bremsbeläge & Scheiben", "Bremsflüssigkeitswechsel", "Bremsenprüfung"],
     },
     {
-      slug: "leasingrueckgabe",
-      title: "Leasingrückgabe",
-      bild: "/images/leistungen/leasingrueckgabe.svg",
-      description:
-        "Professionelle Aufbereitung und Reparatur vor der Fahrzeugrückgabe — stressfrei und transparent.",
-      highlights: ["Zustandsbericht", "Vollaufbereitung", "Rückgabe-Begleitung"],
-    },
-    {
-      slug: "hagelschaden",
-      title: "Hagelschaden",
-      bild: "/images/leistungen/hagelschaden.svg",
-      description:
-        "Schnelle und spurslose Hagelschadenreparatur durch PDR-Technologie ohne Lackierung.",
-      highlights: ["PDR-Technik", "Versicherungsservice", "Leifahrzeug möglich"],
-    },
-    {
-      slug: "unfallreparatur",
-      title: "Unfallreparatur",
-      bild: `${R2}/bibliothek/Unfallreparatur/1777808421144-leistungen_unfallinstandsetzung.webp`,
-      description:
-        "Komplette Unfallabwicklung — von der Schadensbegutachtung bis zur Fahrzeugabholung.",
-      highlights: ["Direktabrechnung", "Mietwagen-Service", "Wertgutachten"],
-    },
+      slug: "ersatzwagen",
+      title: "Ersatzwagen",
+      bild: "https://r2.kuwezu.de/bibliothek/Ersatzwagen/1777882571137-ersatzwagen_auto.webp",
+      description: "Damit Sie während der Reparatur mobil bleiben, stellen wir Ihnen gerne einen Ersatzwagen zur Verfügung. Einfach bei der Terminvereinbarung anfragen – so bleiben Sie flexibel im Alltag.",
+      highlights: ["Kostenlose Leihwagen", "Spontan verfügbar", "Mobilität garantiert"],
+    }
   ],
 
   // ── Karriere ───────────────────────────────────────────────────────────────
   karriere: {
     jobs: [
-      { title: "Kfz-Mechatroniker / -in",              type: "Vollzeit",            experience: "Berufserfahrung erwünscht"  },
-      { title: "Kfz-Lackierer / -in",                  type: "Vollzeit",            experience: "Berufseinsteiger willkommen" },
-      { title: "Karosseriebauer / -in",                 type: "Vollzeit / Teilzeit", experience: "Berufserfahrung erwünscht"  },
-      { title: "Auszubildende / -r Kfz-Mechatronik",   type: "Ausbildung",          experience: "Schulabschluss erforderlich" },
+      { title: "Fachkraft (m/w/d)",       type: "Vollzeit",   experience: "Berufserfahrung erwünscht"  },
+      { title: "Auszubildende (m/w/d)",    type: "Ausbildung", experience: "Schulabschluss erforderlich" },
     ],
+  },
+
+  // ── Öffnungszeiten & Services ──────────────────────────────────────────────
+  tuev_termine: false as boolean,
+  oeffnungszeiten: {
+    mo_fr: "08:00 – 19:00" as string,
+    sa:    "08:00 – 15:00" as string,
+    so:    "" as string,
   },
 
   // ── Kontakt ────────────────────────────────────────────────────────────────
   kontakt: {
-    oeffnungszeiten: ["Mo–Fr: 08:00 – 18:00", "Sa: 09:00 – 13:00"],
+    oeffnungszeiten: ["Mo–Fr: 08:00 – 19:00", "Sa: 08:00 – 15:00"],
   },
 } as const;
 
